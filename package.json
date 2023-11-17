@@ -1,0 +1,20 @@
+{
+    "name": "nutricare",
+    "version": "1.0.0",
+    "description": "NutriCare",
+    "author": "Signate",
+    "private": true,
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "scripts": {
+        "NutriCare": "concurrently \"yarn common\" \"yarn server\" \"yarn app --host\"",
+        "server": "cd server && yarn dev",
+        "app": "cd app && yarn dev",
+        "common": "cd common && yarn dev",
+        "install": "concurrently \"cd common && yarn\" \"cd server && yarn\" \"cd app && yarn\"",
+        "build": "concurrently \"cd common && yarn build\" \"cd server && yarn build\" \"cd app && yarn build\"",
+        "start": "cd server && yarn start"
+    }
+}
