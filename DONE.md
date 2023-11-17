@@ -5,6 +5,7 @@ Ce fichier contient les taches réalisées pour le projet NutriCare. Il est tri�
 ## Global
 
 - [x] Faire les fichiers de configuration coté client et serveur
+- [x] Intégrer le projet common au server et app
 
 ## API
 

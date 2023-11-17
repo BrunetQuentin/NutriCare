@@ -2,7 +2,11 @@
   "name": "common",
   "version": "1.0.0",
   "description": "A common library for the project NitriCare",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

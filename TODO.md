@@ -10,7 +10,6 @@ Aucun test n'est prévu pour le moment, il faudra en faire une fois le projet fi
 
 ## Global
 
-- [ ] Intégrer le projet common au server et app
 - [ ] Faire les fichiers de documentation
 
 ## API
