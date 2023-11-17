@@ -10,13 +10,11 @@ Aucun test n'est prévu pour le moment, il faudra en faire une fois le projet fi
 
 ## Global
 
-- [ ] Faire les fichiers de configuration coté client et serveur
 - [ ] Intégrer le projet common au server et app
 - [ ] Faire les fichiers de documentation
 
 ## API
 
-- [ ] Faire les fichiers de configuration (.env)
 - [ ] Mettre un système de catch des erreurs
 - [ ] Mettre en place les DTO pour les requêtes et catch les erreurs de call
 - [ ] Mettre en place un système de log
@@ -27,7 +25,6 @@ Aucun test n'est prévu pour le moment, il faudra en faire une fois le projet fi
 
 ## App
 
-- [ ] Faire les fichiers de configuration (.env)
 - [ ] Service pour lié l'API et l'application (et gestion des erreurs)
 - [ ] Service pour la gestion des connexion (Surcouche du service API) et gestion de l'utilisateur connecté
 - [ ] Service pour la gestion des données de l'application (Surcouche du service API)
