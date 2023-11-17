@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common'
+import { Controller, ForbiddenException, Get } from '@nestjs/common'
 import { IExemple } from 'common'
 import { AppService } from './app.service'
 
@@ -9,5 +9,10 @@ export class AppController {
 	@Get()
 	getHello(): IExemple {
 		return this.appService.getHello()
+	}
+
+	@Get('catch')
+	getCatch(): IExemple {
+		throw new ForbiddenException()
 	}
 }

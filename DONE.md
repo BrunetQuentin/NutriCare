@@ -10,6 +10,7 @@ Ce fichier contient les taches réalisées pour le projet NutriCare. Il est tri�
 ## API
 
 - [x] Faire les fichiers de configuration (.env)
+- [x] Mettre un système de catch des erreurs
 
 ## App
 
