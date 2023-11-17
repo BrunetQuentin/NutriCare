@@ -14,7 +14,6 @@ Aucun test n'est prévu pour le moment, il faudra en faire une fois le projet fi
 
 ## API
 
-- [ ] Mettre en place les DTO pour les requêtes et catch les erreurs de call
 - [ ] Mettre en place un système de log
 - [ ] Connecter la base mongoDB pour pouvoir faire des requêtes
 - [ ] Définir les différents tables de la base de données

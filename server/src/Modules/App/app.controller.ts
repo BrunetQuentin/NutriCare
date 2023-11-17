@@ -1,5 +1,6 @@
-import { Controller, ForbiddenException, Get } from '@nestjs/common'
+import { Controller, ForbiddenException, Get, Param } from '@nestjs/common'
 import { IExemple } from 'common'
+import { TestDtoDto } from '../../DTO/dto.dto'
 import { AppService } from './app.service'
 
 @Controller()
@@ -14,5 +15,10 @@ export class AppController {
 	@Get('catch')
 	getCatch(): IExemple {
 		throw new ForbiddenException()
+	}
+
+	@Get('dto/:id')
+	getDto(@Param() param: TestDtoDto): number {
+		return param.id
 	}
 }

@@ -4,13 +4,14 @@ Ce fichier contient les taches réalisées pour le projet NutriCare. Il est tri�
 
 ## Global
 
-- [x] Faire les fichiers de configuration coté client et serveur
 - [x] Intégrer le projet common au server et app
+- [x] Faire les fichiers de configuration coté client et serveur
 
 ## API
 
-- [x] Faire les fichiers de configuration (.env)
+- [x] Mettre en place les DTO pour les requêtes et catch les erreurs de call
 - [x] Mettre un système de catch des erreurs
+- [x] Faire les fichiers de configuration (.env)
 
 ## App
 
