@@ -10,6 +10,7 @@
     },
     "scripts": {
         "NutriCare": "concurrently \"yarn common\" \"yarn server\" \"yarn app --host\"",
+        "dev": "concurrently \"yarn common\" \"yarn server\" \"yarn app --host\"",
         "server": "cd server && yarn dev",
         "app": "cd app && yarn dev",
         "common": "cd common && yarn dev",

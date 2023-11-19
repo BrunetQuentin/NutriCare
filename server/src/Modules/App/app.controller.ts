@@ -1,10 +1,18 @@
-import { Controller, ForbiddenException, Get, Param } from '@nestjs/common'
+import {
+	Controller,
+	ForbiddenException,
+	Get,
+	Logger,
+	Param,
+} from '@nestjs/common'
 import { IExemple } from 'common'
 import { TestDtoDto } from '../../DTO/dto.dto'
 import { AppService } from './app.service'
 
 @Controller()
 export class AppController {
+	private readonly logger = new Logger(AppController.name)
+
 	constructor(private readonly appService: AppService) {}
 
 	@Get()
@@ -19,6 +27,8 @@ export class AppController {
 
 	@Get('dto/:id')
 	getDto(@Param() param: TestDtoDto): number {
+		this.logger.log(param.id)
+
 		return param.id
 	}
 }

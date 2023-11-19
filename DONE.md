@@ -9,6 +9,7 @@ Ce fichier contient les taches réalisées pour le projet NutriCare. Il est tri�
 
 ## API
 
+- [x] Mettre en place un système de log
 - [x] Mettre en place les DTO pour les requêtes et catch les erreurs de call
 - [x] Mettre un système de catch des erreurs
 - [x] Faire les fichiers de configuration (.env)
