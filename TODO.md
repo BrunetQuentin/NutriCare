@@ -14,7 +14,6 @@ Aucun test n'est prévu pour le moment, il faudra en faire une fois le projet fi
 
 ## API
 
-- [ ] Connecter la base mongoDB pour pouvoir faire des requêtes
 - [ ] Définir les différents tables de la base de données
 - [ ] Middleware de vérification de token pour connexion
 - [ ] Définir les endpoints de l'API
