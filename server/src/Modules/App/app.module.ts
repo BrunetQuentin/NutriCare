@@ -2,7 +2,9 @@ import { Module } from '@nestjs/common'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { MongooseModule } from '@nestjs/mongoose'
 import configuration from '../../Configuration/EnvConfig'
+import { AuthModule } from '../Auth/auth.module'
 import { ElementModule } from '../Element/element.module'
+import { UserModule } from '../User/user.module'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 
@@ -24,6 +26,8 @@ import { AppService } from './app.service'
 			inject: [ConfigService],
 		}),
 		ElementModule,
+		UserModule,
+		AuthModule,
 	],
 	controllers: [AppController],
 	providers: [AppService],

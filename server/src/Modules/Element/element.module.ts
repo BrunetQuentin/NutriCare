@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common'
 import { MongooseModule } from '@nestjs/mongoose'
-import { Element, ElementSchema } from 'src/Schemas/element'
+import { Element, ElementSchema } from 'src/Schemas/Element'
 
 @Module({
 	controllers: [],
