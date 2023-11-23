@@ -8,7 +8,8 @@ const App = () => {
 
 	return (
 		<div>
-			<h1>{import.meta.env.VITE_SERVER_URL}</h1>
+			Inclu App
+			<h1>{process.env.VITE_SERVER_URL}</h1>
 			{truc.name}
 		</div>
 	)
