@@ -9,6 +9,7 @@ Ce fichier contient les taches réalisées pour le projet NutriCare. Il est tri�
 
 ## API
 
+- [x] Définir les différents tables de la base de données
 - [x] Middleware de vérification de token pour connexion
 - [x] Connecter la base mongoDB pour pouvoir faire des requêtes
 - [x] Mettre en place un système de log

@@ -14,7 +14,6 @@ Aucun test n'est prévu pour le moment, il faudra en faire une fois le projet fi
 
 ## API
 
-- [ ] Définir les différents tables de la base de données
 - [ ] Définir les endpoints de l'API
 
 ## App

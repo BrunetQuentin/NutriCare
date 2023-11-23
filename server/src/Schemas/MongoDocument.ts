@@ -1,4 +1,4 @@
-import { Schema } from '@nestjs/mongoose'
+import { Prop, Schema } from '@nestjs/mongoose'
 import { Types } from 'mongoose'
 
 @Schema({
@@ -6,5 +6,6 @@ import { Types } from 'mongoose'
 	timestamps: false,
 })
 export class MongoDocument {
+	@Prop()
 	_id: Types.ObjectId
 }
