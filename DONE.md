@@ -9,6 +9,8 @@ Ce fichier contient les taches réalisées pour le projet NutriCare. Il est tri�
 
 ## API
 
+- [x] Mettre en place un toaster pour les messages d'erreurs
+- [x] Service pour lié l'API et l'application (et gestion des erreurs)
 - [x] Définir les différents tables de la base de données
 - [x] Middleware de vérification de token pour connexion
 - [x] Connecter la base mongoDB pour pouvoir faire des requêtes
@@ -19,6 +21,7 @@ Ce fichier contient les taches réalisées pour le projet NutriCare. Il est tri�
 
 ## App
 
+- [x] Deux build pour l'application (admin et client)
 - [x] Faire les fichiers de configuration (.env)
 
 ## Common

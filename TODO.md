@@ -18,7 +18,6 @@ Aucun test n'est prévu pour le moment, il faudra en faire une fois le projet fi
 
 ## App
 
-- [ ] Service pour lié l'API et l'application (et gestion des erreurs)
 - [ ] Service pour la gestion des connexion (Surcouche du service API) et gestion de l'utilisateur connecté
 - [ ] Service pour la gestion des données de l'application (Surcouche du service API)
 - [ ] Service pour la gestion de données personnelles (Surcouche du service connexion)

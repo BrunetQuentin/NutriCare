@@ -1,0 +1,19 @@
+:root {
+	// define colors
+	--error: #d32f2f;
+	--success: #2e7d32;
+	--warning: #ed6c02;
+	--info: #0288d1;
+
+	// background colors
+	--bg-white: #ffffff;
+
+	// border radius
+	--border-radius-soft: 0.5rem;
+	--border-radius-medium: 1rem;
+	--border-radius-hard: 2rem;
+}
+
+* {
+	box-sizing: border-box;
+}
