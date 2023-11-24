@@ -2,7 +2,6 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { HydratedDocument, Types } from 'mongoose'
 import Collections from 'src/Types/collections'
 import { MongoDocument } from './MongoDocument'
-import { ScientificReferenceSchema } from './ScientificReference'
 
 export type ElementDocument = HydratedDocument<Element>
 
@@ -33,7 +32,7 @@ export class Element extends MongoDocument {
 	type: ElementTypes
 
 	@Prop({
-		type: [{ type: Types.ObjectId, ref: ScientificReferenceSchema }],
+		type: [{ type: Types.ObjectId, ref: Collections.ScientificReference }],
 	})
 	scientificReference: Types.ObjectId[]
 }

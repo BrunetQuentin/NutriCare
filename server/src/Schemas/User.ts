@@ -2,7 +2,6 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { HydratedDocument, Types } from 'mongoose'
 import Collections from 'src/Types/collections'
 import { MongoDocument } from './MongoDocument'
-import { UserDataSchema } from './UserData'
 
 export type UserDocument = HydratedDocument<User>
 
@@ -27,7 +26,7 @@ export class User extends MongoDocument {
 
 	@Prop({
 		type: Types.ObjectId,
-		ref: UserDataSchema,
+		ref: Collections.UserData,
 	})
 	userData: Types.ObjectId
 }
