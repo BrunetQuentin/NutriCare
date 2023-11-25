@@ -15,7 +15,7 @@ const ApiService = ({ children }: { children: ReactElement }) => {
 	const { addToast } = useToast()
 
 	const api = axios.create({
-		baseURL: process.env.REACT_APP_API_URL,
+		baseURL: import.meta.env.VITE_SERVER_URL,
 		headers: {
 			'Content-Type': 'application/json',
 		},

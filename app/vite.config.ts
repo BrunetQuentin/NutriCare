@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 const mode = process.env.MODE || 'client and admin'
@@ -12,12 +13,12 @@ export default defineConfig(() => {
 				outDir: 'adminDist',
 				rollupOptions: {
 					input: {
-						admin: './adminIndex.html',
+						admin: resolve(__dirname, 'admin/index.html'),
 					},
 				},
 			},
 			server: {
-				open: '/adminIndex.html',
+				open: '/admin/',
 			},
 		}
 	} else if (mode === 'client') {
@@ -27,12 +28,12 @@ export default defineConfig(() => {
 				outDir: 'clientDist',
 				rollupOptions: {
 					input: {
-						client: './clientIndex.html',
+						client: resolve(__dirname, 'client/index.html'),
 					},
 				},
 			},
 			server: {
-				open: '/clientIndex.html',
+				open: '/client/',
 			},
 		}
 	}
@@ -42,13 +43,14 @@ export default defineConfig(() => {
 			outDir: 'dist',
 			rollupOptions: {
 				input: {
-					client: './clientIndex.html',
-					admin: './adminIndex.html',
+					client: resolve(__dirname, 'client/index.html'),
+					admin: resolve(__dirname, 'admin/index.html'),
+					dev: resolve(__dirname, 'index.html'),
 				},
 			},
 		},
 		server: {
-			open: '/clientIndex.html',
+			open: '/client/',
 		},
 	}
 })

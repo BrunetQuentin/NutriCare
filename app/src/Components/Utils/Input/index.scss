@@ -1,0 +1,102 @@
+.outlined-input {
+	position: relative;
+
+	input {
+		height: 4rem;
+		outline: 2px solid var(--main-black);
+		border-radius: 5px;
+		border: none;
+		padding-left: 20px;
+		font-size: 20px;
+		transition: 0.1s var(--ease);
+		background: none;
+		// hide autofill background color
+		box-shadow: 0 0 0 1000px var(--bg-main) inset;
+
+		&:not(:placeholder-shown) ~ label,
+		&:focus ~ label {
+			top: 0px;
+			left: 10px;
+			font-size: 1rem;
+			background: var(--bg-main);
+		}
+		&:focus {
+			outline: 2px solid var(--info) !important;
+		}
+		&:hover {
+			outline: 2px solid var(--main-black);
+		}
+		&:focus ~ label {
+			color: var(--info) !important;
+		}
+	}
+
+	label {
+		position: absolute;
+		top: 50%;
+		left: 5%;
+		transform: translateY(-50%);
+		text-align: center;
+		transition: 0.2s var(--ease);
+		font-size: 1.5rem;
+		pointer-events: none;
+		padding: 0 5px;
+	}
+}
+
+.standard-input {
+	position: relative;
+
+	input {
+		height: 4rem;
+		border: none;
+		border-bottom: 2px solid var(--main-black);
+		padding-left: 20px;
+		font-size: 20px;
+		transition: 0.1s var(--ease);
+		outline: none;
+		box-sizing: border-box;
+		background: none;
+
+		&:not(:placeholder-shown) ~ label,
+		&:focus ~ label {
+			top: 0px;
+			left: 10px;
+			font-size: 1rem;
+		}
+
+		&:focus ~ .underline {
+			transform: scaleX(1);
+		}
+
+		&:hover {
+			border-bottom: 2px solid var(--main-black);
+		}
+
+		&:focus ~ label {
+			color: var(--info) !important;
+		}
+	}
+
+	label {
+		position: absolute;
+		top: 50%;
+		left: 5%;
+		transform: translateY(-50%);
+		text-align: center;
+		transition: 0.2s var(--ease);
+		font-size: 1.5rem;
+		pointer-events: none;
+		padding: 0 5px;
+	}
+
+	.underline {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: scaleX(0);
+		transition: transform 0.2s var(--ease);
+		border-bottom: 2px solid var(--info);
+	}
+}
