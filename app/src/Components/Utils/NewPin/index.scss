@@ -1,0 +1,16 @@
+.new-pin {
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+
+	> .pin {
+		position: absolute;
+		width: 0.9rem;
+		height: 0.9rem;
+		transform: translate(50%, -50%);
+		border-radius: 50%;
+		background-color: var(--new-notification);
+		border: 2px solid white;
+		z-index: 100;
+	}
+}

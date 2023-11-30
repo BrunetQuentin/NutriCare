@@ -1,0 +1,26 @@
+.card {
+	border-radius: var(--border-radius-medium);
+	box-shadow: var(--box-shadow);
+	height: fit-content;
+	padding: 1rem;
+	margin: 1rem;
+
+	> .card-header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	> * {
+		padding: 0.5rem;
+	}
+}
+
+.card.default {
+	color: var(--text-main);
+	background-color: var(--bg-white);
+}
+
+.card.primary {
+	color: var(--main-white);
+	background: var(--bg-mutlti);
+}

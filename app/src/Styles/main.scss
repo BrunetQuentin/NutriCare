@@ -1,0 +1,13 @@
+#root {
+	background: var(--bg-main);
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.app {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+}

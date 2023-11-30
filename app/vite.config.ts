@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import svgr from 'vite-plugin-svgr'
 
 const mode = process.env.MODE || 'client and admin'
 
@@ -8,7 +9,7 @@ export default defineConfig(() => {
 	console.log('Interface courante: ', mode)
 	if (mode === 'admin') {
 		return {
-			plugins: [react()],
+			plugins: [react(), svgr()],
 			build: {
 				outDir: 'adminDist',
 				rollupOptions: {
@@ -23,7 +24,7 @@ export default defineConfig(() => {
 		}
 	} else if (mode === 'client') {
 		return {
-			plugins: [react()],
+			plugins: [react(), svgr()],
 			build: {
 				outDir: 'clientDist',
 				rollupOptions: {
@@ -38,7 +39,7 @@ export default defineConfig(() => {
 		}
 	}
 	return {
-		plugins: [react()],
+		plugins: [react(), svgr()],
 		build: {
 			outDir: 'dist',
 			rollupOptions: {
